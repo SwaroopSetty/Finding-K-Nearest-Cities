@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Python Flask App</title>
+
+   
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+   
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Find Cities Near You</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Find Cities Based On Distance</h2>
+        <form action="Locations" method="post">
+        <label for="inputName" class="sr-only">City</label>
+        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="City Name" required autofocus>
+        <label for="inputRegion" class="sr-only">Region</label>
+        <input type="Region" name="inputRegion" id="inputRegion" class="form-control" placeholder="Region" required autofocus>
+        <label for="inputDistance" class="sr-only">Distance</label>
+        <input type="Distance" name="inputDistance" id="inputDistance" class="form-control" placeholder="Distance" required>
+
+        <input type="submit" value="Find" class="btn btn-lg btn-primary btn-block"></td>
+      </form>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Find Cities Based on N</h2>
+        <form action="LocationsN" method="post">
+        <label for="inputName" class="sr-only">City</label>
+        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="City Name" required autofocus>
+        <label for="inputRegion" class="sr-only">Region</label>
+        <input type="Region" name="inputRegion" id="inputRegion" class="form-control" placeholder="Region" required autofocus>
+        <label for="inputN" class="sr-only">N</label>
+        <input type="N" name="inputN" id="inputN" class="form-control" placeholder="N" required>
+
+        <input type="submit" value="Find" class="btn btn-lg btn-primary btn-block"></td>
+      </form>
+      </div>
+
+
+    </div>
+  </body>
+</html>
